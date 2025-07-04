@@ -46,7 +46,10 @@ def generate_launch_description():
         package='ws_visualize',
         executable='ee_sampler_node',
         name='ee_Sampler_node',
-        output='screen'
+        output='screen',
+        parameters = [{
+            'urdf_path'  : urdf_path
+        }]
     )
 
     return LaunchDescription([

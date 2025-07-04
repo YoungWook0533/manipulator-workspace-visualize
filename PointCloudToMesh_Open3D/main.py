@@ -2,7 +2,7 @@ import numpy as np
 import open3d as o3d
 
 
-dataname = "DBB_l.pcd"
+dataname = "DBB.pcd"
 pcd      = o3d.io.read_point_cloud(dataname)          # XYZ[RGB] cloud
 
 pcd.estimate_normals(

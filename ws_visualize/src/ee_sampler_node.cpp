@@ -27,7 +27,7 @@ public:
   EESamplerNode() : Node("ee_sampler_node"), gen_(rd_())
   {
     /* ─── parameters ─────────────────────────────────────────── */
-    urdf_path_  = declare_parameter("urdf_path",  "/home/yeonguk/mani_ws/src/ws_visualize/urdf/husky_dual_fr3.urdf");
+    urdf_path_  = declare_parameter("urdf_path",  " ");
     ee_frame_   = declare_parameter("ee_frame",   "l_fr3_link8");
     base_frame_ = declare_parameter("base_frame", "base_link");
     fixed_frame_= declare_parameter("fixed_frame","base_footprint");
